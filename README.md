@@ -4,7 +4,7 @@
 
 [线上审核提交文案与评审核验流程](SUBMISSION.md) · [已确认的测试网证据](dist/agentproof-testnet-evidence.json)
 
-测试网合约：`0x0556476064e9532DCC1C66eEbe1Cc24384d46878`。部署与存证均已确认成功，原文查询匹配、追加一个字符查询不匹配。主网 Gas 已申请，主网部署待到账后完成。
+测试网合约：`0x0556476064e9532DCC1C66eEbe1Cc24384d46878`。部署与存证均已确认成功，原文查询匹配、追加一个字符查询不匹配。主网部署、存证和原文／改字核验也已完成，见下方主网证据。
 
 AI 输出内容存证与核验工具。用户粘贴报告，在浏览器本地生成 SHA-256 摘要，将摘要通过钱包签名提交到 BOT Chain。任何人可用报告原文、提交者地址及合约地址查询匹配记录。
 
@@ -46,4 +46,11 @@ Node.js 20+。执行 `npm ci`、`npm run build`。使用任意静态服务器托
 
 ## 主网证据
 
-主网部署及交互需要参赛者钱包签名和 Gas。目前不在 README 中预填地址或交易。完成后以页面导出的 mainnet evidence JSON 为准。
+网络：BOT Chain Mainnet（677）。部署与存证回执均已确认成功。
+
+- 合约：https://scan.botchain.ai/address/0x0556476064e9532DCC1C66eEbe1Cc24384d46878
+- 部署交易：https://scan.botchain.ai/tx/0xd5cee9ab97a21e180fd70ce1cee8c950cc9b98fed5226a1461da3a50e147fa54
+- 存证交易：https://scan.botchain.ai/tx/0x203e9a3f2f05fba2a91fb2f27289e3a9a9f3a479259c0d330caa6077f0f2cce2
+- [主网证据 JSON](agentproof-mainnet-evidence.json)。
+
+原文查询返回时间戳 1791380550；追加一个句号后返回零。主网与测试网地址相同，但属于独立部署，请按 Chain ID 和浏览器区分。

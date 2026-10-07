@@ -1,0 +1,15 @@
+{
+  "project": "AgentProof",
+  "network": "BOT Chain Mainnet",
+  "chainId": 677,
+  "demo": "https://agentproof-aliar.aliar202517.chatgpt.site",
+  "deploymentTx": "0xd5cee9ab97a21e180fd70ce1cee8c950cc9b98fed5226a1461da3a50e147fa54",
+  "contract": "0x0556476064e9532DCC1C66eEbe1Cc24384d46878",
+  "author": "0xe288F09B30B1740a1527748b6F5107f791738282",
+  "digest": "0x22af7042d209e805258bff47be831dfc021f903cc7d91c892bad0b9819f2313b",
+  "attestationTx": "0x203e9a3f2f05fba2a91fb2f27289e3a9a9f3a479259c0d330caa6077f0f2cce2",
+  "blockNumber": 25861519,
+  "contractLink": "https://scan.botchain.ai/address/0x0556476064e9532DCC1C66eEbe1Cc24384d46878",
+  "deploymentLink": "https://scan.botchain.ai/tx/0xd5cee9ab97a21e180fd70ce1cee8c950cc9b98fed5226a1461da3a50e147fa54",
+  "transactionLink": "https://scan.botchain.ai/tx/0x203e9a3f2f05fba2a91fb2f27289e3a9a9f3a479259c0d330caa6077f0f2cce2"
+}
