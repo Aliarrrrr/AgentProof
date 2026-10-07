@@ -1,0 +1,67 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "author",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "Attested",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        }
+      ],
+      "name": "attest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "proofs",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b506102088061001f6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806323c3617f1461003b5780637b015fc014610050575b600080fd5b61004e610049366004610181565b61008a565b005b61007861005e36600461019a565b600060208181529281526040808220909352908152205481565b60405190815260200160405180910390f35b806100cb5760405162461bcd60e51b815260206004820152600c60248201526b115b5c1d1e48191a59d95cdd60a21b60448201526064015b60405180910390fd5b33600090815260208181526040808320848452909152902054156101245760405162461bcd60e51b815260206004820152601060248201526f105b1c9958591e48185d1d195cdd195960821b60448201526064016100c2565b60408051602080820183524280835233600081815280845285812087825284528590209351909355925192835283927fc711987c8742715d264861409040509aec80fa088e00dee2adb2a6340b680122910160405180910390a350565b60006020828403121561019357600080fd5b5035919050565b600080604083850312156101ad57600080fd5b82356001600160a01b03811681146101c457600080fd5b94602093909301359350505056fea2646970667358221220eb493733fd91df25b9d79706894b557a3369d3de15bd0842c92c1d30eb8f465564736f6c634300081e0033"
+}
