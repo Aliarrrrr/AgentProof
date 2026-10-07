@@ -2,7 +2,7 @@
 
 在线 Demo：https://agentproof-aliar.aliar202517.chatgpt.site
 
-[线上审核提交文案与评审核验流程](SUBMISSION.md) · [路演 PPT](dist/AgentProof.pptx) · [已确认的测试网证据](dist/agentproof-testnet-evidence.json)
+[线上审核提交文案与评审核验流程](SUBMISSION.md) · [已确认的测试网证据](dist/agentproof-testnet-evidence.json)
 
 测试网合约：`0x0556476064e9532DCC1C66eEbe1Cc24384d46878`。部署与存证均已确认成功，原文查询匹配、追加一个字符查询不匹配。主网 Gas 已申请，主网部署待到账后完成。
 
