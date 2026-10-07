@@ -1,0 +1,1 @@
+{"name":"agentproof","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node test.mjs"},"dependencies":{"ethers":"6.15.0","solc":"0.8.30","esbuild":"0.25.10","ganache":"7.9.2"}}

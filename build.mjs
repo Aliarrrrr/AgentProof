@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import solc from 'solc';
+import {build} from 'esbuild';
+const source=fs.readFileSync('contracts/AgentProof.sol','utf8');
+const out=JSON.parse(solc.compile(JSON.stringify({language:'Solidity',sources:{'AgentProof.sol':{content:source}},settings:{optimizer:{enabled:true,runs:200},evmVersion:'paris',outputSelection:{'*':{'*':['abi','evm.bytecode.object']}}}})));
+for(const e of out.errors||[]) if(e.severity==='error') throw new Error(e.formattedMessage);
+const c=out.contracts['AgentProof.sol'].AgentProof;
+fs.writeFileSync('dist/contract.json',JSON.stringify({abi:c.abi,bytecode:'0x'+c.evm.bytecode.object},null,2));
+fs.copyFileSync('contracts/AgentProof.sol','dist/AgentProof.sol');
+await build({entryPoints:['app.js'],bundle:true,minify:true,format:'esm',outfile:'dist/app.js',platform:'browser',target:'es2022'});
+console.log('Contract compiled (Paris EVM); browser bundle built.');
